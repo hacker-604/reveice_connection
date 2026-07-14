@@ -41,9 +41,10 @@
 ### Prerequisites
 
 **Kali Linux (Control Server):**
-```bash
+
 sudo apt update
 sudo apt install python3 python3-pip
+
 Windows Target:
 
 bash
@@ -189,51 +190,3 @@ Made with ❤️ for Security Education
 ⭐ Star this repo if you find it useful!
 
 </div> ```
-✅ How to Apply This Fix
-Option 1: Directly on GitHub (Easiest)
-Go to your repository on GitHub
-
-Click on README.md
-
-Click the pencil icon (✏️) to edit
-
-Delete everything in the file
-
-Copy and paste the clean version above
-
-Scroll down and click "Commit changes"
-
-Option 2: Through Terminal
-bash
-# Delete the bad README
-rm README.md
-
-# Create new README with clean content
-nano README.md
-# Paste the clean version above
-
-# Save and push
-git add README.md
-git commit -m "fix: Clean and properly formatted README"
-git push origin main
-🎯 What This Fix Does
-✅ Proper Markdown formatting - GitHub renders it correctly
-
-✅ Clean tables - Easy to read command reference
-
-✅ Code blocks - Syntax highlighting works
-
-✅ Emojis display - Visual appeal
-
-✅ Clear sections - Easy navigation
-
-✅ Professional look - Attractive and organized
-
-🚀 After Applying the Fix
-Refresh your GitHub repository
-
-The README will now display beautifully
-
-All formatting will work correctly
-
-It will be easy to read and understand
