@@ -1,5 +1,3 @@
-<details> <summary><b>Click to expand the clean README content</b></summary>
-markdown
 # 🕵️ RAT - Remote Administration Toolkit
 
 <div align="center">
@@ -279,4 +277,4 @@ Remember: With great power comes great responsibility.
 
 ⬆ Back to Top
 
-</div> ```</details>
+</div> 
